@@ -1,136 +1,144 @@
-<!DOCTYPE html><html lang="en">
+<!DOCTYPE html>
+<html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Megashree M | Portfolio</title>
+
+<link rel="stylesheet" href="style.css">
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-<style>
-* { margin: 0; padding: 0; box-sizing: border-box; }
-body {
-  font-family: 'Poppins', sans-serif;
-  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
-  color: #fff;
-}
-header {
-  text-align: center;
-  padding: 60px 20px;
-  animation: fadeIn 1.5s ease-in-out;
-}
-header h1 { font-size: 40px; }
-header p { opacity: 0.8; }
-nav {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-  padding: 15px;
-  background: rgba(255,255,255,0.1);
-  backdrop-filter: blur(10px);
-  position: sticky;
-  top: 0;
-}
-nav a {
-  color: white;
-  text-decoration: none;
-  font-weight: 500;
-}
-.container {
-  max-width: 1100px;
-  margin: auto;
-  padding: 20px;
-}
-section { margin: 40px 0; }
-h2 {
-  margin-bottom: 20px;
-  border-left: 5px solid #00c6ff;
-  padding-left: 10px;
-}
-.card {
-  background: rgba(255,255,255,0.1);
-  border-radius: 15px;
-  padding: 20px;
-  margin: 15px 0;
-  backdrop-filter: blur(10px);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-.card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 10px 20px rgba(0,0,0,0.3);
-}
-.skills {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-  gap: 15px;
-}
-.skill {
-  background: linear-gradient(45deg, #00c6ff, #0072ff);
-  padding: 10px;
-  border-radius: 10px;
-  text-align: center;
-  font-size: 14px;
-}
-footer {
-  text-align: center;
-  padding: 20px;
-  background: rgba(0,0,0,0.3);
-}
-@keyframes fadeIn {
-  from { opacity: 0; transform: translateY(20px); }
-  to { opacity: 1; transform: translateY(0); }
-}
-</style>
+
 </head>
-<body><header>
-<h1>Megashree M</h1>
-<p>Biomedical Engineering Student | Embedded Systems | Healthcare Innovation</p>
-<p>📧 megashreem16@gmail.com | 📞 8825544325</p>
-<p><a href="https://www.linkedin.com/in/megashree-m-1b818a328/" target="_blank" style="color:#00c6ff;">LinkedIn Profile</a></p>
-</header><nav>
-<a href="#about">About</a>
-<a href="#education">Education</a>
-<a href="#skills">Skills</a>
-<a href="#experience">Experience</a>
-<a href="#projects">Projects</a>
-</nav><div class="container"><section id="about">
-<h2>About Me</h2>
-<div class="card">
-<p>I am a Biomedical Engineering student passionate about healthcare technology, sensor integration, and embedded systems. I enjoy building innovative solutions that improve patient care and rehabilitation.</p>
-</div>
-</section><section id="education">
-<h2>Education</h2>
-<div class="card">
-<strong>SRM Institute of Science and Technology</strong><br>
-B.Tech Biomedical Engineering (2021–2025)<br>
-CGPA: 7.74
-</div>
-<div class="card">
-<strong>ABS Vidhya Mandhir CBSE</strong><br>
-Class X: 55.4% | Class XII: 60.2%
-</div>
-</section><section id="skills">
-<h2>Skills</h2>
-<div class="skills">
-<div class="skill">Communication</div>
-<div class="skill">Biomedical Instrumentation</div>
-<div class="skill">Embedded Systems</div>
-<div class="skill">IoT</div>
-<div class="skill">Sensor Integration</div>
-<div class="skill">Project Management</div>
-<div class="skill">Microcontrollers</div>
-</div>
-</section><section id="experience">
-<h2>Experience</h2>
-<div class="card">
-<strong>Biomedical Intern - Adyar Cancer Institute</strong><br>
-June 2023
-<p>Gained exposure to biomedical instruments and hospital workflows.</p>
-</div>
-</section><section id="projects">
-<h2>Projects</h2>
-<div class="card">
-<strong>High-Sensitivity Finger Motion Monitoring Glove</strong>
-<p>Developed a wearable glove with embedded sensors for real-time motion tracking and rehabilitation using machine learning techniques.</p>
-</div>
-</section></div><footer>
-<p>© 2026 Megashree M</p>
-</footer></body>
+
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar">
+    <div class="logo">Megashree</div>
+    <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+    <h1>Megashree M</h1>
+    <p>Biomedical Engineer • AI in Healthcare • Embedded Systems</p>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="section">
+    <h2>About Me</h2>
+    <p>
+        I am a B.Tech Biomedical Engineering student at SRM Institute of Science and Technology 
+        with a CGPA of 7.74. My expertise includes biomedical instrumentation, sensor integration, 
+        and embedded systems. I have hands-on experience through internships and projects, 
+        including developing a high-sensitivity finger motion monitoring glove.
+    </p>
+</section>
+
+<!-- EDUCATION -->
+<section class="section">
+    <h2>Education</h2>
+
+    <div class="card">
+        <h3>SRM Institute of Science and Technology</h3>
+        <p>B.Tech Biomedical Engineering (2021–2025)</p>
+        <p>CGPA: 7.74</p>
+    </div>
+
+    <div class="card">
+        <h3>ABS Vidhya Mandhir CBSE</h3>
+        <p>X: 55.4% | XII: 60.2%</p>
+    </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects" class="section">
+    <h2>Projects</h2>
+
+    <div class="card">
+        <h3>EEG Artifact Removal using Deep Learning</h3>
+        <p>
+            Developed an Autoencoder-based system to remove noise from EEG signals with GUI support.
+        </p>
+    </div>
+
+    <div class="card">
+        <h3>High-Sensitivity Finger Motion Monitoring Glove</h3>
+        <p>
+            Wearable glove with embedded sensors for real-time finger motion tracking using ML models.
+        </p>
+    </div>
+
+</section>
+
+<!-- SKILLS -->
+<section id="skills" class="section">
+    <h2>Skills</h2>
+
+    <div class="grid">
+        <div class="card">Biomedical Instrumentation</div>
+        <div class="card">Embedded Systems</div>
+        <div class="card">Sensor Integration</div>
+        <div class="card">IoT</div>
+        <div class="card">Project Management</div>
+        <div class="card">Communication</div>
+    </div>
+</section>
+
+<!-- EXPERIENCE -->
+<section class="section">
+    <h2>Experience</h2>
+
+    <div class="card">
+        <h3>Biomedical Intern – Adyar Cancer Institute</h3>
+        <p>June 2023</p>
+        <p>Learned biomedical instruments and hospital workflow.</p>
+    </div>
+</section>
+
+<!-- TRAINING -->
+<section class="section">
+    <h2>Training & Visits</h2>
+
+    <div class="card">Gleneagles Global Health City – Industrial Visit</div>
+    <div class="card">Atheenapandian Pvt Ltd – Industrial Training</div>
+</section>
+
+<!-- LANGUAGES -->
+<section class="section">
+    <h2>Languages</h2>
+
+    <div class="grid">
+        <div class="card">English</div>
+        <div class="card">Tamil</div>
+        <div class="card">Japanese (Basic)</div>
+    </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="section">
+    <h2>Contact</h2>
+
+    <p>Email: megashreem16@gmail.com</p>
+    <p>Phone: 8825544325</p>
+    <p>
+        <a href="https://www.linkedin.com/in/megashree-m-1b818a328/" target="_blank">
+            LinkedIn Profile
+        </a>
+    </p>
+</section>
+
+<!-- FOOTER -->
+<footer>
+    <p>© 2026 Megashree M Portfolio</p>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
 </html>
